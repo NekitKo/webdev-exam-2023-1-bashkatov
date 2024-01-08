@@ -46,12 +46,12 @@ h1 {
     color: white;
 }
 
-th,tbody {
+th, td, tbody {
     border: 1px solid black;
-    text-align: center;
+    
 }
 
-.exp {
+#exp {
     text-align: right;
     clear: both;
     float: left;
