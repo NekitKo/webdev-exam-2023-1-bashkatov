@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+}
+
+header,footer {
+    background-color: #f7022a;
+}
+
+footer {
+    color: white;
+}
+
+.Mtext {
+    color: black;
+}
+
+.field {
+    border-radius: 10px;
+    border-color: yellow;
+}
+
+.btncolor {
+    border-radius: 10px;
+    border-color: yellow;
+}
+
+.choice {
+    border-radius: 10px;
+    border-color: yellow;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+#from {
+    width: 3em;
+}
+
+#to {
+    width: 3em;
+}
+
+h1 {
+    color: white;
+}
+
+th,tbody {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.exp {
+    text-align: right;
+    clear: both;
+    float: left;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: black;
+}

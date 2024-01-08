@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelWithUs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="border-bottom border-black sticky-top">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/guideicon.png" width="75px" height="75px" alt="Company Logo">
+                </a>
+                <h1>TravelWithUs</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#About">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pt-3" id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/moscow.jpeg" width="75%" alt="team" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="Mtext">Немного о нас</h2>
+                        <p>С радостью приветствуем вас на нашем сайте по выбору экскурсии.
+                            Здесь вы можете подобрать интересующий вас маршрут по достопримечательностям столицы,
+                            а также подходящих вам экскурсоводов. Мы работаем с целью дарить приятные эмоции
+                            от такого прекрасного города. Надеемся, вы сможете найти маршрут по душе
+                            и весело проведете время.</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="mt-md-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-8 text-center">
+                        <h3>Индивидуальный подход</h3>
+                        <p>Все люди разные, поэтому мы предлагаем различные маршруты,
+                            которые подойдут именно вам или вашей компании.
+                            Помимо маршрутов мы также предлагаем разнообразных
+                            экскурсоводов, которые проведут вас по этим сказочным
+                            местам и городу.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-8 text-center">
+                        <h3>Разнообразие маршрутов</h3>
+                        <p>У нас имеется большое количество маршрутов,
+                            где каждый сможет подобрать себе ТОТ САМЫЙ маршрут.
+                            Благодаря этому вы сполна насладитесь проведенным
+                            временем и будете долго с теплом вспоминать о этом
+                            путешествии.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-8 text-center">
+                        <h3>Экскурсоводы с многолетним стажем</h3>
+                        <p>Все наши сотрудники были выбраны за их достижения и успехи
+                            в сфере проведения подобных мероприятий. Они имеют многолетний
+                            опыт работы, отличное взаимодействие с людьми, поэтому вам
+                            некогда будет скучать, а время пролетит незаметно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-md-2">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center pb-4">Туристические маршруты</h3>
+                    <div class="container text-center py-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form>
+                                    <div>
+                                        <input type="text" id="name" placeholder="Введите название" name="name" class="field">
+                                        <button class="btncolor" id="search">Поиск</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <form>
+                                    <div>
+                                        <select class="choice" name="landscape" id="landscape">
+                                            <option value="01">Первая достопримечательность</option>
+                                            <option value="02">Вторая достопримечательность</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <table id="path">
+                            <thead>
+                                <tr>
+                                    <th class="col-2 text-center">Название маршрута</th>
+                                    <th class="col-5 text-center">Описание маршрута</th>
+                                    <th class="col-5 text-center">Основные объекты маршрута</th>
+                                    <th class="col-2 text-center">Выбор маршрута</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- api data -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- навбар для просмотра маршрутов по страницам(пагинация) -->
+        <section></section>
+        <!-- таблица доступных экскурсоводов -->
+        <section class="mt-md-3">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center pb-4">Доступные по маршруту экскурсоводы</h3>
+                    <div class="container text-center py-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form>
+                                    <div>
+                                        <select class="choice" name="lang" id="lang" >
+                                            <option value="" disabled selected>Язык экскурсии</option>
+                                            <option value="1">Русский</option>
+                                            <option value="2">Английский</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-4">
+                                <form>
+                                    <div class="container">
+                                        <label for="exp" class="exp">Опыт работы</label>
+                                        <input type="number" id="from" placeholder="От" name="from" class="field" min="0" max="100">
+                                        <input type="number" id="to" placeholder="До" name="to" class="field" min="0" max="100">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <table id="guide">
+                            <thead>
+                                <tr>
+                                    <th class="col-1"></th>
+                                    <th class="col-3">ФИО</th>
+                                    <th class="col-2">Языки</th>
+                                    <th class="col-1 px-2">Опыт работы(года)</th>
+                                    <th class="col-3">Стоимость услуг в час</th>
+                                    <th class="col-2">Выбор экскурсовода</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- api data -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- кнопка для отправления заявки -->
+        <section></section>
+        <!-- экскурсоводы с знанием ин.язов и опытом работы -->
+        <section></section>
+        <section class="mt-md-4 mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h3 class="Mtext">Связь с нами</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" class="form-control" id="name" placeholder="Введите свое имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Эл.почта</label>
+                                <input type="email" class="form-control" id="email" placeholder="Введите электронную почту">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Введите свое сообщение"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-1 mb-1">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6" id="contact">
+                        <h3 class="Mtext">Контактная информация</h3>
+                        <p>Телефон: +7 (903) 543-46-06</p>
+                        <p>Эл.почта: excursionMoscoW@gmail.com</p>
+                        <p>Наши социальные сети:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <i class="bi bi-telegram">Telegram</i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="bi bi-youtube">Youtube</i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="blueBack py-4 mt-0">
+        <hr>
+        <div class="container text-center w-lg-50 w-75">
+            Экскурсии по Москве от TravelWithUs
+        </div>
+        <div class="container text-center mt-3 w-lg-50 w-75 text-secondary">
+            © 2024
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
