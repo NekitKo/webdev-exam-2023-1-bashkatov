@@ -41,11 +41,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="images/moscow.jpeg" width="75%" alt="team" class="img-fluid">
+                        <img src="images/moscow.jpeg" width="75%" alt="team" class="img">
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="Mtext">Немного о нас</h2>
-                        <p>С радостью приветствуем вас на нашем сайте по выбору экскурсии.
+                    <div class="col-md-6 text-center">
+                        <h2 class="Mtext text-decoration-underline">Немного о нас</h2>
+                        <p class="Mtext">С радостью приветствуем вас на нашем сайте по выбору экскурсии.
                             Здесь вы можете подобрать интересующий вас маршрут по достопримечательностям столицы,
                             а также подходящих вам экскурсоводов. Мы работаем с целью дарить приятные эмоции
                             от такого прекрасного города. Надеемся, вы сможете найти маршрут по душе
@@ -63,8 +63,7 @@
                             которые подойдут именно вам или вашей компании.
                             Помимо маршрутов мы также предлагаем разнообразных
                             экскурсоводов, которые проведут вас по этим сказочным
-                            местам и городу.
-                        </p>
+                            местам и городу.</p>
                     </div>
                     <div class="col-md-4 col-sm-8 text-center">
                         <h3>Разнообразие маршрутов</h3>
@@ -122,11 +121,14 @@
                             </thead>
                             <tbody>
                                 <!-- api data -->
-                                <div id="tablecont">
-                                    
-                                </div>
+                                <div id="tablecont"></div>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="pag">
+                        <button onclick="getBackPage()" class="btn">Назад</button>
+                        <div id="btn-p" class="btn"></div>
+                        <button onclick="getNextPage()" class="btn">Вперед</button>
                     </div>
                 </div>
             </div>
