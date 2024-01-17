@@ -55,25 +55,25 @@ function displayData(data) {
       var obj = displayedData[i];
       var row = tbody.insertRow();
 
-      var eleme = row.insertCell();
-      eleme.innerHTML = obj.name;
+      var title = row.insertCell();
+      title.innerHTML = obj.name;
       
-      var elem = row.insertCell();
-      elem.innerHTML = obj.description;
+      var description = row.insertCell();
+      description.innerHTML = obj.description;
       
-      var ele = row.insertCell();
-      var el = row.insertCell();
+      var objects = row.insertCell();
+      var btns = row.insertCell();
       
       var mainObject = obj.mainObject;
       var mainObjectCell = document.createElement('ul');
       var list = document.createElement('list');
       list.textContent = mainObject;
       mainObjectCell.appendChild(list);      
-      ele.appendChild(mainObjectCell);
+      objects.appendChild(mainObjectCell);
       
       var btn = document.createElement('button');
       btn.textContent = 'Выбрать';
-      el.appendChild(btn);
+      btns.appendChild(btn);
    }
       
 }
